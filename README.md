@@ -1,8 +1,10 @@
 # superset-tink
 
 run docker-compose up -d --build
+
 Once everything is up, run docker exec -it {contaienr id} sh
-Run
+
+RUN THE FOLLOWING COMMANDS
 # Install superset
 pip install apache-superset
 
