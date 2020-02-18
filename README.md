@@ -11,6 +11,7 @@ superset db upgrade
 
 # Create an admin user (you will be prompted to set a username, first and last name before setting a password)
 export FLASK_APP=superset
+
 flask fab create-admin
 
 # Load some data to play with
