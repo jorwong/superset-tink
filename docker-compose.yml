@@ -3,7 +3,7 @@ version: '3'
 services:
   
   nginx:
-    build: nginx:latest
+    image: nginx:latest
     ports:
       - "80:80"
     volumes:
@@ -28,6 +28,6 @@ services:
     volumes:
       - redis:/data
 volumes:
-  redis
+  redis:
       # reference
 # - https://github.com/amancevice/docker-superset/blob/master/examples/postgres/docker-compose.yml
