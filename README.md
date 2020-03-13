@@ -6,7 +6,7 @@ Once everything is up, run docker exec -it {contaienr id} sh
 
 RUN THE FOLLOWING COMMANDS
 # Install superset
-pip install apache-superset
+sudo pip install apache-superset
 
 # Initialize the database
 superset db upgrade
