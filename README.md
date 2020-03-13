@@ -2,11 +2,11 @@
 
 run docker-compose up -d --build
 
-Once everything is up, run docker exec -it {contaienr id} sh
+Once everything is up, run docker exec -itu root {contaienr id} /bin/bash
 
 RUN THE FOLLOWING COMMANDS
 # Install superset
-sudo pip install apache-superset
+pip install apache-superset
 
 # Initialize the database
 superset db upgrade
@@ -21,3 +21,4 @@ superset load_examples
 
 # Create default roles and permissions
 superset init
+chmod 777 -R /usr/local/lib/python3.6/site-packages/superset/
